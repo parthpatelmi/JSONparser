@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <script src="https://cdn.rawgit.com/caldwell/renderjson/master/renderjson.js"></script>
+
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>JSON Parser</h1>
+      <div id="app">
+        <div class="input">
+          <!-- <input type="text" id="str" value='{"name":"hello"}' />Enter Json -->
+          <h4>Enter Json</h4>
+          <textarea
+            name="str"
+            value='{"name":"hello"}'
+            id="str"
+            placeholder="Enter JSON Object"
+          ></textarea>
+        </div>
+        <div class="data tree">
+          <h4>String parse</h4>
+
+          <div class="wrapword" id="data" placeholder="JSON Parser"></div>
+        </div>
+        <div class="error">
+          <h4>JS eval</h4>
+          <div class="error" id="error" placeholder="JSON Parser"></div>
+        </div>
+        <div id="test"></div>
+      </div>
+    </div>
+
+    <script src="src/finalTree.js"></script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 1rem;
+  font-size: 0.85rem !important;
+}
+
+h1 {
+  display: block;
+  margin-bottom: 1rem;
+}
+#app {
+  display: flex;
+}
+
+#str {
+  height: 80vh;
+  min-width: 30vw;
+  min-height: 80vh;
+  max-width: 30vw;
+  max-height: 80vh;
+  width: 30vw;
+  margin-right: 1rem;
+}
+
+#data {
+  height: 80vh;
+  width: 30vw;
+  border: solid black;
+  margin-right: 1rem;
+  overflow: auto;
+  overflow-wrap: break-word;
+}
+
+.wrapword {
+  overflow: auto;
+  white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  white-space: pre-wrap; /* css-3 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+  white-space: -webkit-pre-wrap; /* Newer versions of Chrome/Safari*/
+  word-break: break-all;
+  white-space: normal;
+}
+
+#error {
+  height: 80vh;
+  width: 30vw;
+  border: solid black;
+  overflow: auto;
+}
+
+/* ul:hover > i {
+  color: yellow;
+} */
+li ul {
+  padding-left: 30px;
+}
+
+li ul {
+  display: block;
+  /* color: green; */
+}
+li:hover > ul {
+  color: green;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover ~ div:first-of-type {
+  color: yellow;
+}
+label {
+  display: none;
+}
+
+#toggle:checked ~ .display {
+  display: none;
+}
+
+/* a:active ~ div:first-of-type,
+a:visited ~ div:first-of-type {
+  display: none;
+} */
+
+/* a:target ~ div:first-of-type {
+  display: none;
+} */
+/* .open:target .divDispaly {
+  display: none;
+} */
+/* a.close {
+  display: block;
+} */
